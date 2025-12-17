@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="tg">
+
+<head>
+  <meta name="google-site-verification" content="X31xWULXvdry8-Tz0X2wobR_HEWyFQzyrBec7FKjNzo" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Komron Rezmonov — Full-Stack Developer & Automation Engineer. Portfolio." />
+
+  <!-- Open Graph / Facebook / Telegram -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/komron-tjk" />
+  <meta property="og:title" content="Komron Rezmonov — Full-Stack Developer" />
+  <meta property="og:description"
+    content="Web Development, Telegram Bots, and Automation Solutions for your business." />
+  <meta property="og:image" content="images/komron1.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://github.com/komron-tjk" />
+  <meta property="twitter:title" content="Komron Rezmonov — Full-Stack Developer" />
+  <meta property="twitter:description" content="Web Development, Telegram Bots, and Automation Solutions." />
+  <meta property="twitter:image" content="images/komron1.jpg" />
+
+  <title>Komron Rezmonov — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css?v=6" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">Komron</div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" role="menu">
+        <li><a href="#home" class="active" data-i18n="nav_home">Асоси</a></li>
+        <li><a href="#about" data-i18n="nav_about">Дар бораи ман</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Малакахо</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Лоиҳаҳо</a></li>
+        <li><a href="#services" data-i18n="nav_services">Хизматрасониҳо</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Тамос</a></li>
+        <li><button id="lang-toggle" class="lang-btn">EN</button></li>
+        <li>
+          <button id="theme-toggle" class="lang-btn" aria-label="Toggle Dark/Light Mode" style="margin-left: 8px;">
+            <i class="fas fa-sun"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div id="particles-js"></div>
+      <div class="container hero-grid">
+        <div class="hero-text fade-in">
+          <h1 class="gradient-text" data-i18n="hero_name">Комрон Резмонов</h1>
+          <h2><span id="typing">Full-Stack Developer & Automation Engineer</span></h2>
+          <p data-i18n="hero_desc_short">
+            Ман веб-барномаҳои муосир, зудкор ва пурқувват месозам: аз интерфейси зебо то бэкенди устувор.
+            Ҳамчунин дар автоматизатсия бо n8n ва Telegram Bots таҷрибаи қавӣ дорам.
+          </p>
+          <p data-i18n="hero_desc_long">
+            Full-Stack Developer & Automation Engineer. Building modern, fast, and scalable web applications with clean
+            UI, solid backend, and smart automation systems.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-green" href="#about" data-i18n="btn_about">Дар бораи Ман</a>
+            <a class="btn btn-outline" id="contactBtn" href="https://wa.me/992555528880"
+              data-i18n="btn_contact">Нависед</a>
+          </div>
+
+          <div class="social" aria-hidden="false">
+            <a class="icon linkedin" href="https://www.linkedin.com/in/komron-rezmonov-32a470315"
+              aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a class="icon instagram" href="https://www.instagram.com/komik.rap?igsh=MThjaWZraXB3M3pubQ=="
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a class="icon github" href="https://github.com/komron-tjk" aria-label="GitHub"><i
+                class="fab fa-github"></i></a>
+            <a class="icon twitter" href="https://x.com/TjkKomron?t=IaldPExMfza78aLD6YZ4CQ&s=09" aria-label="Twitter"><i
+                class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <aside class="hero-image fade-in" aria-hidden="false">
+          <div class="ring">
+            <div class="ring2">
+              <!-- Шумо метавонед ин src-ро ба "images/yourphoto.jpg" иваз кунед -->
+              <img src="images/komron1.jpg" alt="Комрон Резмонов - Full Stack Developer" loading="lazy" />
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 data-i18n="about_title">Дар бораи Ман</h2>
+        <p class="about-text" data-i18n="about_text_1">
+          Ман — Комарон Резмонов, соли тавалудам 2003, Full-Stack Developer ва Automation Engineer.
+          Ман ба рушди веб, сохтани барномаҳои муосир ва автоматизатсияи равандҳо ҷиддан шавқ дорам ва ҳар рӯз малакаҳои
+          худро беҳтар мекунам. Роҳе, ки ман интихиб кардам — ин сохтани барномаҳо ва хидматҳои рақамиест, ки ба одамон
+          ва бизнесҳо фоида меоранд.
+        </p>
+        <p class="about-text" data-i18n="about_text_2">
+          Дар кори худ ман усулҳои муосир ва стандартҳои технологияро истифода мебарам. Ба ман муҳим аст, ки ҳар як
+          лоиҳа: зудкор, тоза ва услубӣ, бехатар ва бароҳат барои корбар бошад.
+        </p>
+        <p class="about-text" data-i18n="about_text_3">
+          Ман бо технологияҳои HTML, CSS, JavaScript, Node.js, Express, MongoDB кор мекунам ва инчунин таҷрибаи хуб бо
+          API, Webhook, Automation (n8n) ва Telegram Bots дорам. Ҳам интерфейси зебо сохта метавонам, ҳам бэкенди
+          устувор.
+        </p>
+        <p class="about-text" data-i18n="about_text_4">
+          Ман ҳамеша мекӯшам, ки ҳар як корро бо сифати баланд иҷро кунам. Барои ман муҳим аст, ки кор:
+          дақиқ анҷом дода шавад, бо меъёрҳои касбӣ мутобиқат кунад, қобили васеъшавӣ бошад ва корбаронаш таҷрибаи хуб
+          гиранд.
+        </p>
+        <p class="about-text" data-i18n="about_text_5">
+          Илова ба ин, ман ба автоматикунонии равандҳо таваҷҷӯҳи зиёд дорам. Ман метавонам системаҳои мураккабро
+          тавассути n8n, webhook ва ботҳои интеллектуалӣ ба таври пурра автоматӣ созам, то ки вақт ва меҳнати одамон
+          сарфа шавад.
+        </p>
+        <p class="about-text" data-i18n="about_text_6">
+          Ман шахси мақсаднок, масъулиятшинос, ором ва зеҳнӣ ҳастам. Омӯзишро дӯст медорам ва ҳар рӯз худро беҳтар
+          мекунам. Барои ман пешрафт — вазифаи аввал аст.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Малакахо</h2>
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-item">
+            <i class="fab fa-html5" style="color: #e34f26;"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js" style="color: #f7df1e;"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-react" style="color: #61dafb;"></i>
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-wind" style="color: #38bdf8;"></i>
+            <span>Tailwind</span>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-item">
+            <i class="fab fa-node" style="color: #339933;"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-python" style="color: #306998;"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database" style="color: #4db33d;"></i>
+            <span>MongoDB</span>
+          </div>
+
+          <!-- Automation / Tools -->
+          <div class="skill-item">
+            <i class="fab fa-telegram" style="color: #24A1DE;"></i>
+            <span>Telegram API</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-bolt" style="color: #ff9e0f;"></i>
+            <span>n8n / Zapier</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-robot" style="color: #00ff9d;"></i>
+            <span>AI Agents</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-git-alt" style="color: #f1502f;"></i>
+            <span>Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 data-i18n="projects_title">Лоиҳаҳои Ман</h2>
+        <div class="projects-grid">
+
+          <!-- Project 1: Telegram Bot -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <i class="fab fa-telegram-plane"></i>
+            </div>
+            <div class="project-content">
+              <h3>Telegram Shop Bot</h3>
+              <p data-i18n="proj_1_desc">Боти мукаммали мағоза бо сабади харид, пардохт ва панели админ. Интегратсия бо
+                Google Sheets.</p>
+              <div class="tags">
+                <span>Node.js</span>
+                <span>Telegraf</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="https://t.me/Shopthj_bot" class="btn-sm"><i class="fas fa-play"></i> Demo
+                  <!-- LINK HERE --></a>
+                <a href="#" class="btn-sm outline"><i class="fab fa-github"></i> Code <!-- LINK HERE --></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Auto Posting System -->
+          <div class="project-card fade-in">
+            <div class="project-img n8n-bg">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="project-content">
+              <h3>n8n Automation System</h3>
+              <p data-i18n="proj_2_desc">Системаи худкор барои нашри мақолаҳо дар 5 шабакаи иҷтимоӣ (Instagram,
+                Telegram, LinkedIn) аз як ҷо.</p>
+              <div class="tags">
+                <span>n8n</span>
+                <span>Webhooks</span>
+                <span>AI Agent</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm"><i class="fas fa-play"></i> Demo <!-- LINK HERE --></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Portfolio Website -->
+          <div class="project-card fade-in">
+            <div class="project-img web-bg">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="project-content">
+              <h3>Modern Portfolio</h3>
+              <p data-i18n="proj_3_desc">Веб-сайти шахсӣ бо HTML, CSS, JS. Дизайни мутобиқ (Responsive), Light/Dark mode
+                ва аниматсияҳо.</p>
+              <div class="tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://komron-it.vercel.app" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live
+                  <!-- LINK HERE --></a>
+                <a href="https://github.com/komron-tjk/Komron.it.git" class="btn-sm outline"><i
+                    class="fab fa-github"></i> Code <!-- LINK HERE --></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 
+          ===== ШАБЛОН БАРОИ ЛОИҲАИ НАВ (Project Template) =====
+          Инро нусхабардорӣ (Copy/Paste) кунед ва маълумотро иваз намоед:
+
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <i class="fas fa-layer-group"></i> 
+            </div>
+            <div class="project-content">
+              <h3>Номи Лоиҳа</h3>
+              <p>Маълумот дар бораи лоиҳа...</p>
+              <div class="tags">
+                <span>Tech 1</span>
+                <span>Tech 2</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm">Demo</a>
+                <a href="#" class="btn-sm outline">Code</a>
+              </div>
+            </div>
+          </div>
+          -->
+
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2 data-i18n="services_title">Хизматрасониҳо</h2>
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card fade-in">
+            <div class="icon-box"><i class="fas fa-code"></i></div>
+            <h3 data-i18n="serv_web_title">Web Development</h3>
+            <p data-i18n="serv_web_desc">Сохтани сайтҳои замонавӣ, лендингҳо ва веб-барномаҳо бо истифода аз
+              технологияҳои навтарин ва дизайни
+              зебо.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="service-card fade-in">
+            <div class="icon-box"><i class="fab fa-telegram-plane"></i></div>
+            <h3 data-i18n="serv_bot_title">Telegram Bots</h3>
+            <p data-i18n="serv_bot_desc">Ботҳои автоматӣ, мағозаҳо дар Telegram, ва системаҳои дастгирӣ барои бизнеси
+              шумо (Shop Bot, Support
+              Bot).</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="service-card fade-in">
+            <div class="icon-box"><i class="fas fa-magic"></i></div>
+            <h3 data-i18n="serv_auto_title">Automation & AI</h3>
+            <p data-i18n="serv_auto_desc">Интегратсияи системаҳо (n8n, Zapier), AI-агентҳо ва худкор кардани равандҳои
+              корӣ барои сарфаи вақт.</p>
+          </div>
+        </div>
+
+        <div class="services-footer fade-in">
+          <a href="#process" class="view-process-link">
+            <span data-i18n="serv_process_link">Раванди кори манро бинед</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="section">
+      <div class="container stats-container fade-in">
+        <div class="stat-item">
+          <!-- data-target="100" means count to 100 -->
+          <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+          <div class="stat-label" data-i18n="stat_quality">Сифати Баланд</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="24" data-suffix="/7">0/7</div>
+          <div class="stat-label" data-i18n="stat_support">Дастгирии Доимӣ</div>
+        </div>
+        <div class="stat-item">
+          <!-- Text stays static, just clean typography -->
+          <div class="stat-number">Fast</div>
+          <div class="stat-label" data-i18n="stat_creative">Суръати Баланд</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section">
+      <div class="container">
+        <h2 data-i18n="process_title">Раванди Кор</h2>
+        <div class="process-grid">
+          <div class="process-step fade-in">
+            <div class="step-icon">1</div>
+            <h3 data-i18n="proc_step1_title">Таҳлил</h3>
+            <p data-i18n="proc_step1_desc">Муайян кардани талабот, ҳадафҳо ва нақшаи пешакӣ.</p>
+          </div>
+          <div class="process-step fade-in">
+            <div class="step-icon">2</div>
+            <h3 data-i18n="proc_step2_title">Нақша</h3>
+            <p data-i18n="proc_step2_desc">Тарҳрезӣ, интихоби технология ва сохтани прототип.</p>
+          </div>
+          <div class="process-step fade-in">
+            <div class="step-icon">3</div>
+            <h3 data-i18n="proc_step3_title">Иҷро</h3>
+            <p data-i18n="proc_step3_desc">Код-нависӣ, пайваст кардани API ва тести аввалия.</p>
+          </div>
+          <div class="process-step fade-in">
+            <div class="step-icon">4</div>
+            <h3 data-i18n="proc_step4_title">Натиҷа</h3>
+            <p data-i18n="proc_step4_desc">Супоридани лоиҳа, омӯзиш ва дастгирии техникӣ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 data-i18n="contact_title">Тамос</h2>
+        <div class="contact-grid">
+          <!-- Left: Info -->
+          <div class="contact-info fade-in">
+            <p data-i18n="contact_desc">Барои ҳамкорӣ ё саволҳо, лутфан ба ман нависед.</p>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span data-i18n="contact_email">Имейл:</span>
+                <a href="mailto:rezmonkomron@gmail.com">rezmonkomron@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fab fa-telegram-plane"></i>
+              <div>
+                <span data-i18n="contact_tg">Телеграм:</span>
+                <a href="https://t.me/Blacktime_03" target="_blank">@Blacktime_03</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <!-- Right: Form -->
+          <div id="contact-form" class="fade-in" role="form">
+            <div class="form-group">
+              <input type="text" id="name" required placeholder=" " />
+              <label for="name" data-i18n="form_name">Номи шумо</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" required placeholder=" " />
+              <label for="phone" data-i18n="form_phone">Телефон</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="4" required placeholder=" "></textarea>
+              <label for="message" data-i18n="form_message">Паёми шумо</label>
+            </div>
+            <button type="button" id="send-btn" class="btn">
+              <span data-i18n="form_btn">Равон кардан</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div id="form-message" class="form-message"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Komron Rezmonov — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/992555528880" class="floating-btn" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js?v=6"></script>
+</body>
+
+</html>
