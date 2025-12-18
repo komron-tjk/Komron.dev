@@ -2,7 +2,9 @@
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and services as a Full-Stack Developer and Automation Engineer. It is built with performance, aesthetics, and user experience in mind.
 
-🔗 **Live Demo:** [https://komron-dev.vercel.app](komron-dev.vercel.app)
+🔗 **Live Demo:** [https://komron-dev.vercel.app](https://komron-dev.vercel.app)
+
+![Portfolio Preview](images/komron1.jpg)
 
 ## ✨ Features
 
@@ -77,7 +79,3 @@ This project is optimized for deployment on **Vercel**.
 
 ---
 *© 2025 Komron Rezmonov. All rights reserved.*
-
-
-
-
