@@ -4,8 +4,6 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 🔗 **Live Demo:** [https://komron-dev.vercel.app](https://komron-dev.vercel.app)
 
-![Portfolio Preview](images/komron1.jpg)
-
 ## ✨ Features
 
 *   **🎨 Modern UI/UX:** Clean, dark-themed design (inspired by "Dark Neon") with glassmorphism effects.
@@ -79,3 +77,4 @@ This project is optimized for deployment on **Vercel**.
 
 ---
 *© 2025 Komron Rezmonov. All rights reserved.*
+
