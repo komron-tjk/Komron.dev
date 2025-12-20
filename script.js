@@ -167,7 +167,11 @@ const translations = {
     nav_home: "Асоси",
     nav_about: "Дар бораи ман",
     nav_skills: "Малакахо",
+    skills_title: "Малакаҳои Ман",
     nav_projects: "Лоиҳаҳо",
+    proj_1_title: "Боти Мағоза (Telegram)",
+    proj_2_title: "Системаи Автоматикунонӣ (n8n)",
+    proj_3_title: "Портфолиои Замонавӣ",
     nav_services: "Хизматрасониҳо",
     nav_contact: "Тамос",
     hero_name: "Комрон Резмонов",
@@ -199,7 +203,10 @@ const translations = {
     proj_3_desc: "Веб-сайти шахсӣ бо HTML, CSS, JS. Дизайни мутобиқ (Responsive), Light/Dark mode ва аниматсияҳо.",
     stat_quality: "Сифати Баланд",
     stat_support: "Дастгирии Доимӣ",
+    stat_support: "Дастгирии Доимӣ",
+    stat_fast: "Зуд",
     stat_creative: "Суръати Баланд",
+    footer_rights: "Ҳама ҳуқуқҳо ҳифз шудаанд.",
     process_title: "Раванди Кор",
     proc_step1_title: "Таҳлил",
     proc_step1_desc: "Муайян кардани талабот, ҳадафҳо ва нақшаи пешакӣ.",
@@ -220,7 +227,11 @@ const translations = {
     nav_home: "Home",
     nav_about: "About",
     nav_skills: "Skills",
+    skills_title: "My Skills",
     nav_projects: "Projects",
+    proj_1_title: "Telegram Shop Bot",
+    proj_2_title: "n8n Automation System",
+    proj_3_title: "Modern Portfolio",
     nav_services: "Services",
     nav_contact: "Contact",
     projects_title: "My Projects",
@@ -251,7 +262,10 @@ const translations = {
     contact_tg: "Telegram:",
     stat_quality: "High Quality",
     stat_support: "24/7 Support",
+    stat_support: "24/7 Support",
+    stat_fast: "Fast",
     stat_creative: "Fast Speed",
+    footer_rights: "All rights reserved.",
     process_title: "My Process",
     proc_step1_title: "Discovery",
     proc_step1_desc: "Understanding requirements, goals and initial planning.",
@@ -267,10 +281,73 @@ const translations = {
     form_phone: "Phone",
     form_message: "Your Message",
     form_btn: "Send Message"
+  },
+  ru: {
+    nav_home: "Главная",
+    nav_about: "Обо мне",
+    nav_skills: "Навыки",
+    skills_title: "Мои Навыки",
+    nav_projects: "Проекты",
+    projects_title: "Мои Проекты",
+    proj_1_title: "Бот-Магазин (Telegram)",
+    proj_1_desc: "Полноценный бот-магазин с корзиной, оплатой и админ-панелью. Интеграция с Google Sheets.",
+    proj_2_title: "Система Автоматизации (n8n)",
+    proj_2_desc: "Автоматизированная система для публикации статей в 5 соцсетях (Instagram, Telegram, LinkedIn) из одного места.",
+    proj_3_title: "Современное Портфолио",
+    proj_3_desc: "Личный сайт-портфолио на HTML, CSS, JS. Адаптивный дизайн, Light/Dark режим и анимации.",
+    nav_services: "Услуги",
+    nav_contact: "Контакты",
+    hero_name: "Комрон Резмонов",
+    hero_desc_short: "Я создаю современные, быстрые и мощные веб-приложения: от красивого интерфейса до надежного бэкенда. Также имею сильный опыт в автоматизации с n8n и Telegram Bots.",
+    hero_desc_long: "Full-Stack Developer & Automation Engineer. Создаю современные, быстрые и масштабируемые веб-приложения с чистым UI, надежным бэкендом и умными системами автоматизации.",
+    btn_about: "Обо мне",
+    btn_contact: "Написать",
+    about_title: "Обо мне",
+    about_text_1: "Я — Комрон Резмонов, 2003 года рождения, Full-Stack Developer и Automation Engineer. Я серьезно увлекаюсь веб-разработкой, созданием современных приложений и автоматизацией процессов, каждый день улучшая свои навыки. Мой путь — это создание цифровых продуктов и сервисов, которые приносят пользу людям и бизнесу.",
+    about_text_2: "В своей работе я использую современные методы и технологические стандарты. Для меня важно, чтобы каждый проект был: быстрым, чистым и стильным, безопасным и удобным для пользователя.",
+    about_text_3: "Я работаю с HTML, CSS, JavaScript, Node.js, Express, MongoDB, а также имею хороший опыт работы с API, Webhook, Automation (n8n) и Telegram Bots. Могу создать как красивый интерфейс, так и надежный бэкенд.",
+    about_text_4: "Я всегда стараюсь выполнять любую работу качественно. Для меня важно, чтобы работа была: выполнена точно, соответствовала профессиональным стандартам, была масштабируемой и предоставляла пользователям отличный опыт.",
+    about_text_5: "Кроме того, я уделяю большое внимание автоматизации процессов. Я могу полностью автоматизировать сложные системы с помощью n8n, webhook и интеллектуальных ботов, чтобы сэкономить время и труд людей.",
+    about_text_6: "Я целеустремленный, ответственный, спокойный и интеллектуальный человек. Люблю учиться и каждый день становлюсь лучше. Прогресс для меня — задача номер один.",
+    services_title: "Услуги",
+    serv_web_title: "Веб-разработка",
+    serv_web_desc: "Создание современных сайтов, лендингов и веб-приложений с использованием новейших технологий и красивого дизайна.",
+    serv_bot_title: "Telegram Боты",
+    serv_bot_desc: "Автоматические боты, магазины в Telegram и системы поддержки для вашего бизнеса (Shop Bot, Support Bot).",
+    serv_auto_title: "Автоматизация и AI",
+    serv_auto_desc: "Интеграция систем (n8n, Zapier), AI-агенты и автоматизация рабочих процессов для экономии вашего времени.",
+    contact_title: "Контакты",
+    contact_email: "Email:",
+    contact_phone: "Телефон:",
+    contact_tg: "Telegram:",
+    stat_quality: "Высокое Качество",
+    stat_support: "Поддержка 24/7",
+    stat_support: "Поддержка 24/7",
+    stat_fast: "Быстро",
+    stat_creative: "Быстрая Скорость",
+    footer_rights: "Все права защищены.",
+    process_title: "Рабочий Процесс",
+    proc_step1_title: "Анализ",
+    proc_step1_desc: "Определение требований, целей и предварительного плана.",
+    proc_step2_title: "Планирование",
+    proc_step2_desc: "Проектирование, выбор технологий и создание прототипа.",
+    proc_step3_title: "Реализация",
+    proc_step3_desc: "Написание кода, подключение API и первичное тестирование.",
+    proc_step4_title: "Результат",
+    proc_step4_desc: "Сдача проекта, обучение и техническая поддержка.",
+    serv_process_link: "Посмотреть мой процесс работы",
+    contact_desc: "Для сотрудничества или вопросов, пожалуйста, напишите мне.",
+    form_name: "Ваше Имя",
+    form_phone: "Телефон",
+    form_message: "Ваше Сообщение",
+    form_btn: "Отправить"
   }
 };
 
-const langToggle = document.getElementById('lang-toggle');
+
+const langBtn = document.getElementById('lang-btn');
+const langDropdown = document.querySelector('.lang-dropdown');
+const currentLangSpan = document.getElementById('current-lang');
 let currentLang = localStorage.getItem('lang') || 'tg';
 
 function updateLang() {
@@ -280,21 +357,43 @@ function updateLang() {
       el.textContent = translations[currentLang][key];
     }
   });
-  if (langToggle) langToggle.textContent = currentLang === 'tg' ? 'EN' : 'TJ';
+  if (currentLangSpan) currentLangSpan.textContent = currentLang.toUpperCase();
 }
 
-if (langToggle) {
-  langToggle.addEventListener('click', () => {
-    currentLang = currentLang === 'tg' ? 'en' : 'tg';
-    localStorage.setItem('lang', currentLang);
-    updateLang();
+// Logic for Dropdown
+if (langBtn && langDropdown) {
+  // Toggle
+  langBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langDropdown.classList.toggle('show');
+  });
 
-    // Close mobile menu if open
-    if (navLinks && navLinks.classList.contains('open')) {
-      navLinks.classList.remove('open');
-      if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+  // Handle Item Click
+  langDropdown.querySelectorAll('li').forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const selected = item.getAttribute('data-lang');
+      currentLang = selected;
+      localStorage.setItem('lang', currentLang);
+      updateLang();
+      langDropdown.classList.remove('show');
+
+      // Close mobile menu if open
+      if (navLinks && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!langBtn.contains(e.target) && !langDropdown.contains(e.target)) {
+      langDropdown.classList.remove('show');
     }
   });
+
+  // Init
   updateLang();
 }
 

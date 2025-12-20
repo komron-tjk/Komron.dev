@@ -23,22 +23,20 @@
   <meta property="twitter:image" content="images/komron1.jpg" />
 
   <title>Komron Rezmonov — Portfolio</title>
-  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svgбо">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css?v=6" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 
 <body>
   <header class="navbar">
     <div class="container nav-inner">
       <div class="logo">Komron</div>
-
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
 
       <ul class="nav-links" role="menu">
         <li><a href="#home" class="active" data-i18n="nav_home">Асоси</a></li>
@@ -47,13 +45,27 @@
         <li><a href="#projects" data-i18n="nav_projects">Лоиҳаҳо</a></li>
         <li><a href="#services" data-i18n="nav_services">Хизматрасониҳо</a></li>
         <li><a href="#contact" data-i18n="nav_contact">Тамос</a></li>
-        <li><button id="lang-toggle" class="lang-btn">EN</button></li>
-        <li>
-          <button id="theme-toggle" class="lang-btn" aria-label="Toggle Dark/Light Mode" style="margin-left: 8px;">
-            <i class="fas fa-sun"></i>
-          </button>
-        </li>
       </ul>
+
+      <!-- Compact Actions -->
+      <div class="nav-actions">
+        <div class="lang-dropdown-container">
+          <button id="lang-btn" class="lang-btn compact-btn">
+            <span id="current-lang">TG</span>
+            <i class="fas fa-chevron-down" style="font-size: 0.7em;"></i>
+          </button>
+          <ul class="lang-dropdown">
+            <li data-lang="tg">Tojiki</li>
+            <li data-lang="ru">Русский</li>
+            <li data-lang="en">English</li>
+          </ul>
+        </div>
+        <button id="theme-toggle" class="lang-btn compact-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
@@ -139,7 +151,7 @@
 
     <section id="skills" class="section">
       <div class="container">
-        <h2>Малакахо</h2>
+        <h2 data-i18n="skills_title">Малакахо</h2>
         <div class="skills-grid">
           <!-- Frontend -->
           <div class="skill-item">
@@ -210,7 +222,7 @@
               <i class="fab fa-telegram-plane"></i>
             </div>
             <div class="project-content">
-              <h3>Telegram Shop Bot</h3>
+              <h3 data-i18n="proj_1_title">Telegram Shop Bot</h3>
               <p data-i18n="proj_1_desc">Боти мукаммали мағоза бо сабади харид, пардохт ва панели админ. Интегратсия бо
                 Google Sheets.</p>
               <div class="tags">
@@ -232,7 +244,7 @@
               <i class="fas fa-bolt"></i>
             </div>
             <div class="project-content">
-              <h3>n8n Automation System</h3>
+              <h3 data-i18n="proj_2_title">n8n Automation System</h3>
               <p data-i18n="proj_2_desc">Системаи худкор барои нашри мақолаҳо дар 5 шабакаи иҷтимоӣ (Instagram,
                 Telegram, LinkedIn) аз як ҷо.</p>
               <div class="tags">
@@ -252,7 +264,7 @@
               <i class="fas fa-laptop-code"></i>
             </div>
             <div class="project-content">
-              <h3>Modern Portfolio</h3>
+              <h3 data-i18n="proj_3_title">Modern Portfolio</h3>
               <p data-i18n="proj_3_desc">Веб-сайти шахсӣ бо HTML, CSS, JS. Дизайни мутобиқ (Responsive), Light/Dark mode
                 ва аниматсияҳо.</p>
               <div class="tags">
@@ -261,7 +273,7 @@
                 <span>JavaScript</span>
               </div>
               <div class="project-links">
-                <a href="https://komron-it.vercel.app" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live
+                <a href="https://komron-dev.vercel.app" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live
                   <!-- LINK HERE --></a>
                 <a href="https://github.com/komron-tjk/Komron.it.git" class="btn-sm outline"><i
                     class="fab fa-github"></i> Code <!-- LINK HERE --></a>
@@ -348,7 +360,7 @@
         </div>
         <div class="stat-item">
           <!-- Text stays static, just clean typography -->
-          <div class="stat-number">Fast</div>
+          <div class="stat-number" data-i18n="stat_fast">Fast</div>
           <div class="stat-label" data-i18n="stat_creative">Суръати Баланд</div>
         </div>
       </div>
@@ -436,7 +448,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Komron Rezmonov — All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Komron Rezmonov — <span data-i18n="footer_rights">All rights reserved.</span>
+      </p>
     </div>
   </footer>
 
