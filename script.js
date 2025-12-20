@@ -221,7 +221,10 @@ const translations = {
     form_name: "Номи шумо",
     form_phone: "Телефон",
     form_message: "Паёми шумо",
-    form_btn: "Равон кардан"
+    form_btn: "Равон кардан",
+    msg_fill: "Лутфан, ҳамаи майдонҳоро пур кунед.",
+    msg_success: "Ташаккур! Паёми шумо қабул шуд.",
+    msg_error: "Хатогӣ ҳангоми фиристодан. Лутфан дубора кӯшиш кунед."
   },
   en: {
     nav_home: "Home",
@@ -280,7 +283,10 @@ const translations = {
     form_name: "Your Name",
     form_phone: "Phone",
     form_message: "Your Message",
-    form_btn: "Send Message"
+    form_btn: "Send Message",
+    msg_fill: "Please fill in all fields.",
+    msg_success: "Thank you! Message received.",
+    msg_error: "Error sending message. Please try again."
   },
   ru: {
     nav_home: "Главная",
@@ -340,7 +346,10 @@ const translations = {
     form_name: "Ваше Имя",
     form_phone: "Телефон",
     form_message: "Ваше Сообщение",
-    form_btn: "Отправить"
+    form_btn: "Отправить",
+    msg_fill: "Пожалуйста, заполните все поля.",
+    msg_success: "Спасибо! Ваше сообщение отправлено.",
+    msg_error: "Ошибка при отправке. Попробуйте еще раз."
   }
 };
 
@@ -460,7 +469,7 @@ if (sendBtn) {
 
     // Validation
     if (!name || !phone || !message) {
-      showMessage(currentLang === 'tg' ? "Лутфан, ҳамаи майдонҳоро пур кунед." : "Please fill in all fields.", "error");
+      showMessage(translations[currentLang].msg_fill, "error");
       return;
     }
 
@@ -480,7 +489,7 @@ if (sendBtn) {
       .then(response => response.json())
       .then(data => {
         if (data.success) {
-          showMessage(currentLang === 'tg' ? "Ташаккур! Паёми шумо қабул шуд." : "Thank you! Message received.", "success");
+          showMessage(translations[currentLang].msg_success, "success");
           if (contactForm) {
             document.getElementById('name').value = '';
             document.getElementById('phone').value = '';
@@ -488,12 +497,12 @@ if (sendBtn) {
           }
         } else {
           console.error('API Error:', data.error);
-          showMessage("Error sending message. Please try again.", "error");
+          showMessage(translations[currentLang].msg_error, "error");
         }
       })
       .catch(error => {
         console.error('Error:', error);
-        showMessage("Error sending message.", "error");
+        showMessage(translations[currentLang].msg_error, "error");
       })
       .finally(() => {
         // Restore button
