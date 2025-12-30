@@ -314,20 +314,23 @@ body.light-mode .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotate1 25s linear infinite;
-  box-shadow: 0 8px 40px rgb(6, 4, 2) inset;
+  /* Rotate + Pulse */
+  animation: rotate1 45s linear infinite, pulseGlow 4s ease-in-out infinite alternate;
+  box-shadow: 0 0 50px rgba(0, 255, 157, 0.2) inset, 0 0 20px rgba(0, 255, 157, 0.2);
 }
 
 .ring2 {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  border: 3px solid rgba(11, 206, 92, 0.99);
+  border: 4px solid rgba(0, 255, 157, 1);
+  /* Thicker and fully opaque */
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotate2 20s linear infinite reverse;
-  box-shadow: 0 6px 30px rgba(46, 204, 113, 0.02) inset;
+  /* Rotate (Reverse) + Pulse */
+  animation: rotate2 35s linear infinite reverse, pulseGlow 4s ease-in-out infinite alternate;
+  box-shadow: 0 0 30px rgba(46, 204, 113, 0.3) inset;
 }
 
 /* make image rotate slightly, slower than rings */
@@ -363,6 +366,19 @@ body.light-mode .logo {
 
   to {
     transform: rotate(360deg)
+  }
+}
+
+/* Breathing Glow Animation */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 30px rgba(0, 255, 157, 0.2) inset, 0 0 10px rgba(0, 255, 157, 0.2);
+    border-color: rgba(0, 255, 157, 0.6);
+  }
+
+  100% {
+    box-shadow: 0 0 70px rgba(0, 255, 157, 0.5) inset, 0 0 30px rgba(0, 255, 157, 0.6);
+    border-color: rgba(0, 255, 157, 1);
   }
 }
 
